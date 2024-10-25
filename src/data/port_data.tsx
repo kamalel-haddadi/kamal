@@ -3,7 +3,7 @@ import { RiHeartFill } from "@remixicon/react";
 export const DATA = {
     name: "Kamal",
     divide: ".                      .                      .",
-    initials: "DV",
+    initials: "KA",
     url: "https://dillion.io",
     location: "San Francisco, CA",
     locationLink: "https://www.google.com/maps/place/sanfrancisco",
