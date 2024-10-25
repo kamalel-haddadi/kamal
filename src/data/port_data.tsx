@@ -192,6 +192,7 @@ export const DATA = {
                 "Wordpress",
                 "Elementor",
                 "Yoast SEO",
+                "other plugin",
             ],
             links: [
                 {

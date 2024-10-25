@@ -6,11 +6,16 @@ import { DotPattern } from "@/components/ui/dot-pattern";
 import HeroSection from "../components/heroSection"
 import Portfoliocard from "../components/portfoliocard"
 import Descibe from "../components/descibe"
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
 // import abooutmecomponents from "../components/abooutmecomponents"
 // import BlurFade from "@/components/ui/blur-fade";
 // import { FadeText } from "@/components/ui/fade-text";
 // import Markdown from "react-markdown";
 export function main_page() {
+    useEffect(() => {
+        ReactGA.initialize("G-EZMK2Y30S0");
+    }, []);
     return (
         <>
             <main className="flex-none min-h-screen -z-10">
