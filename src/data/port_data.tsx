@@ -140,10 +140,11 @@ export const DATA = {
             description:
                 "Created a sleek, user-friendly site for Auto Service LYL's car rentals",
             technologies: [
-                "Html",
+                "Html5",
                 "JavaScript",
+                "Json",
                 "flowbite",
-                "TailwindCSS",
+                "Tailwind CSS",
             ],
             links: [
                 {
@@ -164,10 +165,11 @@ export const DATA = {
             description:
                 "Redesigned the Get Press website for a press challenge to elevate my design skills.",
             technologies: [
-                "React",
+                "ReactJs",
                 "TailwindCSS",
-                "shadcnUi",
+                "shadcn Ui",
                 "Magic UI",
+                "framer motion",
             ],
             links: [
                 {
