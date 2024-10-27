@@ -7,7 +7,7 @@ export const DATA = {
     url: "https://dillion.io",
     location: "San Francisco, CA",
     locationLink: "https://www.google.com/maps/place/sanfrancisco",
-    resume: "https://doc-14-7o-prod-00-apps-viewer.googleusercontent.com/viewer2/prod-00/pdf/q69eme46abchrf0lk34lo7bm2mqi20u1/cksnpsq7e1nltbm9a4uj0fiujvi6i1en/1729870950000/3/102735418932670730714/APznzabgOreMKp23Mew32B3Qe92-8E8KROqjT5oe6p-vVDmOXXFPJYIvnGfEELLGZ-1Ow6wFvWrm3OaNDR39AkckIG2AJzc0VejnciwHIcpOhikiUyyOLdvrPaoEqzcmuNLWhuMCg-uFI8VWNxiNfe1jsD947jsFCe9jBcpmH-sreafWG9dzKLhd3vSlkaEMbS5RUGm9LuuSJdrg2nAfWgUUzmZy09gs5x1oo9NGpnTLVweEU546pW2JD8xeht5n2NhiNoCZuauH3tCpwoF3uraqZUtFYL3u0elEI6afRQB9RnDHc0jAreiOANOMWiQXkWGYVP8VhEuoPdMf5-1kK6lAam_3vH2BWdDKoO2c-r4RjtSIoWnksKBChh0cDi75thySxUHbCZ5io4ncuRUkat6naQQHBZJTl2iZr0fQG9Yp1rv0u2Pr6xk=?authuser=2&nonce=uav2q4g2nff72&user=102735418932670730714&hash=e19tkuusditpmb9t8tdhvb8306rt4clm",
+    resume: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:3088b5e8-bb89-43a8-9a88-076a43e33861",
     description:
         "frontend-developer developer & UI Designer",
     summary: "I'm Kamal El Haddadi from Tangier, Morocco. Studying (Développement Informatique) and aspiring frontend developer. Skilled in ReactJs, Tailwindcss, a bit of JavaScript you know Haha, and modern ui framework like shadcn and magicui for components. Former media buyer turned coder. Passionate about crafting engaging websites. Let's create something extraordinary! ",

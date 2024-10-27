@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { DATA } from "@/data/port_data"
 import ShimmerButton from "@/components/ui/shimmer-button";
-// import kamalResume from "../assets/kamalResume"
+import Kamal_Elhaddadi from "../assets/Kamal El-haddadi FR.pdf"
 function heroSection() {
 
     return (
@@ -30,10 +30,11 @@ function heroSection() {
 
                             <div className="flex items-center gap-2 justify-center pt-6">
                                 <a
-                                    href={DATA.resume}
+                                    href={Kamal_Elhaddadi}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-2"
+                                // download="Kamal_Elhaddadi.pdf"
                                 >
                                     <ShimmerButton asChild variant="outline" className="shadow-md">
                                         View my resume
