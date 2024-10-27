@@ -36,7 +36,7 @@ function portfoliocard() {
                                         />
                                         <div className="absolute top-2 left-2">
                                             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
-                                                {project.active ? 'Latest one' : 'Not ompleted yet'}
+                                                {project.active ? 'Complated' : 'Not ompleted yet'}
                                             </span>
                                         </div>
                                     </div>
