@@ -8,6 +8,7 @@ import Portfoliocard from "../components/portfoliocard"
 import Descibe from "../components/descibe"
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
+import Footer from "../components/footer";
 // import abooutmecomponents from "../components/abooutmecomponents"
 // import BlurFade from "@/components/ui/blur-fade";
 // import { FadeText } from "@/components/ui/fade-text";
@@ -36,6 +37,7 @@ export function main_page() {
                                 <HeroSection />
                                 <Portfoliocard />
                                 <Descibe />
+                                <Footer />
                             </div>
                         </div>
                     </section>

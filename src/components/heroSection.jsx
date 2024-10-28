@@ -1,7 +1,8 @@
 import { Badge } from "@/components/ui/badge"
 import { DATA } from "@/data/port_data"
 import ShimmerButton from "@/components/ui/shimmer-button";
-import Kamal_Elhaddadi from "../assets/Kamal El-haddadi FR.pdf"
+// import Kamal_Elhaddadi from "../assets/Kamal El-haddadi FR.pdf"
+import Kamal_Elhaddadi from "../assets/Kamal El-haddadi_lastversion.pdf"
 function heroSection() {
 
     return (
