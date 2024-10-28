@@ -2,7 +2,9 @@ import { DATA } from "@/data/port_data"
 "use client";
 import { Badge } from "@/components/ui/badge"
 import Markdown from "react-markdown";
+import JourneyStory from "./journeyStory.jsx"
 // import { BorderBeam } from "@/components/ui/border-beam";
+import ContactForm from "./contactfrom.jsx"
 
 function descibe() {
     return (
@@ -35,11 +37,14 @@ function descibe() {
                 <div className="flex flex-col gap-10 items-center justify-center max-w-4xl mx-auto">
                     <div className="flex w-full flex-col sm:flex-row gap-4 sm:gap-5" >
                         <div className="felx w-[350px]">
-                            <h3 className="text-lg font-medium text-[#1d1d1f]" style={{ fontFamily: "Archivo" }}>about</h3>
+                            <h3 className="text-lg font-medium text-[#1d1d1f]" style={{ fontFamily: "Archivo" }}>About</h3>
                         </div>
-                        <Markdown className="text-[#333] max-w-full text-start !leading-7 text-md">
-                            {DATA.summary}
-                        </Markdown>
+                        <div className="flex flex-col">
+                            <Markdown className="text-[#333] max-w-full text-start !leading-7 text-md">
+                                {DATA.summary}
+                            </Markdown>
+                            <JourneyStory />
+                        </div>
                     </div>
                     <div className=" flex gap-32 text-[#acacac]">
                         <a>.</a>
@@ -137,78 +142,7 @@ function descibe() {
                         <a>.</a>
                         <a>.</a>
                     </div>
-                    <div className="max-w-4xl w-full  mx-auto">
-                        {/* <Card className="bg-white shadow-xl"> */}
-                        {/* <CardContent className="p-0"> */}
-                        <div className="w-full flex flex-col sm:flex-row gap-6 sm:gap-8">
-                            <div className="">
-                                <div className="">
-                                    <h3 className="text-lg text-[#1d1d1f] font-medium" style={{ fontFamily: "Archivo" }}>Contact</h3>
-                                </div>
-                            </div>
-                            <div className="w-full mx-auto">
-                                <form className="space-y-6">
-                                    <div className="space-y-2">
-                                        <label
-                                            htmlFor="name"
-                                            className="block text-md font-normal text-gray-700"
-                                        >
-                                            Full Name
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Your first and last name"
-                                            className="w-full px-4 py-2 border border-gray-300 focus:outline-none rounded-md  "
-                                            required
-                                        />
-                                    </div>
-
-                                    <div className="space-y-2">
-                                        <label
-                                            htmlFor="email"
-                                            className="block text-md font-normal text-gray-700"
-                                        >
-                                            Email Address
-                                        </label>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="john@doe.com"
-                                            className="w-full px-4 py-2 border border-gray-300 focus:outline-none rounded-md  "
-                                            required
-                                        />
-                                    </div>
-
-                                    <div className="space-y-2">
-                                        <label
-                                            htmlFor="message"
-                                            className="block text-md font-normal text-gray-700"
-                                        >
-                                            Message
-                                        </label>
-                                        <textarea
-                                            name="message"
-                                            id="message"
-                                            placeholder="Enter your message..."
-                                            className="w-full min-h-[150px] px-4 py-2 border focus:outline-none border-gray-300 rounded-md  "
-                                            required
-                                        />
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        className="w-full sm:w-auto bg-[#ea580c] hover:bg-[#ea5a0cef] text-white px-8 py-3 rounded-md transition-colors duration-200"
-                                    >
-                                        Send Message
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        {/* </CardContent> */}
-                        {/* </Card> */}
-                    </div>
+                    <ContactForm />
                 </div>
             </div>
 

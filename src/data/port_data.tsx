@@ -10,7 +10,7 @@ export const DATA = {
     resume: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:3088b5e8-bb89-43a8-9a88-076a43e33861",
     description:
         "frontend-developer developer & UI Designer",
-    summary: "I'm Kamal El Haddadi from Tangier, Morocco. Studying (Développement Informatique) and aspiring frontend developer. Skilled in ReactJs, Tailwindcss, a bit of JavaScript you know Haha, and modern ui framework like shadcn and magicui for components. Former media buyer turned coder. Passionate about crafting engaging websites. Let's create something extraordinary! ",
+    summary: "A couple of years ago, I was doing what many would consider a \"stable\" career path. I was a media buyer in Tangier, Morocco, spending my days optimizing ad campaigns and chasing conversion rates. From the outside, it probably looked like I had it figured out – steady work, decent pay, clear career trajectory. What others didn't see were the quiet moments of frustration that kept building up inside me.",
     avatarUrl: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     skills: [
         "Html5",
