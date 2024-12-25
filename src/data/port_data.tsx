@@ -5,6 +5,7 @@ export const DATA = {
     divide: ".                      .                      .",
     initials: "KA",
     url: "https://dillion.io",
+    donationlink: "https://kamalelhaddadi.vercel.app/",
     location: "San Francisco, CA",
     locationLink: "https://www.google.com/maps/place/sanfrancisco",
     resume: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:3088b5e8-bb89-43a8-9a88-076a43e33861",

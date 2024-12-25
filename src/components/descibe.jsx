@@ -94,7 +94,7 @@ function descibe() {
                                                 {edu.degree}
                                             </p>
                                         </div>
-                                        <div className="text-md font-medium text-[#1d1d1f] mt-1 sm:mt-0">
+                                        <div className="text-md font-medium  text-green-600 mt-1 sm:mt-0">
                                             {edu.start}
                                         </div>
                                     </div>
@@ -126,7 +126,7 @@ function descibe() {
                                                 {work.title}
                                             </p>
                                         </div>
-                                        <div className=" text-[#1d1d1f] text-md font-medium mt-1 sm:mt-0">
+                                        <div className=" text-green-600 text-md font-medium mt-1 sm:mt-0">
                                             {work.start}
                                         </div>
                                     </div>

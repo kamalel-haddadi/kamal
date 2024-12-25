@@ -19,20 +19,21 @@ export default function ContactForm() {
         }
 
         // Replace this URL with your Google Apps Script web app URL
-        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby3XqFoi-fYQRRz4LEIihB1tZcTU9y35E_UlkPRicpG0Wgd22J84tox6MLW5dD0eR-p7A/exec'
+        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxCYt3nvpX0ico7Q3Rmm1GgDRnyeC9SVpTYH82K6LI/dev'
 
         try {
             const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
                 method: 'POST',
-                body: JSON.stringify(data),
+                mode: 'no-cors',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'text/plain',
                 },
+                body: JSON.stringify(data),
             })
 
-            if (response.ok) {
+            if (response.type === 'opaque') {
                 setSubmitMessage('Thank you for your message. We\'ll be in touch soon!')
-                event.currentTarget.reset()
+                event.target.reset()
             } else {
                 setSubmitMessage('There was an error submitting the form. Please try again.')
             }
@@ -109,7 +110,7 @@ export default function ContactForm() {
                         <button
                             type="submit"
                             disabled={isSubmitting}
-                            className="w-full sm:w-auto bg-[#ea580c] hover:bg-[#ea5a0cef] text-white px-8 py-3 rounded-md transition-colors duration-200 disabled:opacity-50"
+                            className="w-full sm:w-auto bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700  disabled:opacity-50"
                         >
                             {isSubmitting ? 'Sending...' : 'Send Message'}
                         </button>

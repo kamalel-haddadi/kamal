@@ -9,6 +9,7 @@ import Descibe from "../components/descibe"
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 // import abooutmecomponents from "../components/abooutmecomponents"
 // import BlurFade from "@/components/ui/blur-fade";
 // import { FadeText } from "@/components/ui/fade-text";
@@ -34,6 +35,7 @@ export function main_page() {
                     <section className="flex flex-col items-center justify-center w-full max-w-4xl ">
                         <div className="relative flex flex-col items-center justify-center w-full max-w-4xl  mx-auto">
                             <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                                <Navbar />
                                 <HeroSection />
                                 <Portfoliocard />
                                 <Descibe />

@@ -37,11 +37,11 @@ function heroSection() {
                                     className="flex items-center gap-2"
                                 // download="Kamal_Elhaddadi.pdf"
                                 >
-                                    <ShimmerButton asChild variant="outline" className="shadow-md">
+                                    <a className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300">
                                         View my resume
-                                    </ShimmerButton>
+                                    </a>
                                 </a>
-                                <a href="https://x.com/HaddaadiKamal" className="px-6 py-4 rounded-full hover:bg-slate-100">
+                                <a href="https://x.com/HaddaadiKamal" className="px-6 py-[14px] rounded-full hover:bg-slate-100">
                                     <svg height="15" color="#ea580c" fill="" viewBox="0 0 1200 1227" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path></svg>
                                 </a>
                             </div>

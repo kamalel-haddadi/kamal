@@ -35,21 +35,21 @@ function portfoliocard() {
                                             className="w-full h-48 object-cover"
                                         />
                                         <div className="absolute top-2 left-2">
-                                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium   text-green-600   bg-green-100">
                                                 {project.active ? 'Complated' : 'Not ompleted yet'}
                                             </span>
                                         </div>
                                     </div>
                                     <div className="p-6">
                                         <div className="flex justify-between items-start mb-2">
-                                            <h3 className="text-xl font-medium text-[#1d1d1f]" style={{ fontFamily: "Archivo" }}>
+                                            <h3 className="text-xl  font-medium text-[#1d1d1f]" style={{ fontFamily: "Archivo" }}>
                                                 {project.title}
                                             </h3>
                                             {/* <div className="p-2 rounded-full transition-all duration-300 group-hover:bg-gray-100 dark:group-hover:bg-gray-700">
                                                 <ExternalLink className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                                             </div> */}
                                         </div>
-                                        <p className="text-[#333] text-sm mb-4">
+                                        <p className="text-[#333] text-sm mb-4 hover:text-green-600">
                                             {project.description}
                                         </p>
                                         <div className="flex flex-wrap gap-2">
