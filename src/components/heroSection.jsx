@@ -38,7 +38,7 @@ function heroSection() {
                                 // download="Kamal_Elhaddadi.pdf"
                                 >
                                     <a className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300">
-                                        View my resume
+                                        Download My Resume
                                     </a>
                                 </a>
                                 <a href="https://x.com/HaddaadiKamal" className="px-6 py-[14px] rounded-full hover:bg-slate-100">

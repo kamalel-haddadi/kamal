@@ -6,44 +6,39 @@ export default function ContactForm() {
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitMessage, setSubmitMessage] = useState('')
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        setIsSubmitting(true)
-        setSubmitMessage('')
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setIsSubmitting(true);
+        setSubmitMessage('');
 
-        const formData = new FormData(event.currentTarget)
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            message: formData.get('message'),
-        }
+        const formData = new FormData(event.target);
+        formData.append("access_key", "d32acb78-ffde-4cc3-a419-d6b5abf95c74");
 
-        // Replace this URL with your Google Apps Script web app URL
-        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxCYt3nvpX0ico7Q3Rmm1GgDRnyeC9SVpTYH82K6LI/dev'
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
 
         try {
-            const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'text/plain',
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
                 },
-                body: JSON.stringify(data),
-            })
+                body: json
+            }).then((res) => res.json());
 
-            if (response.type === 'opaque') {
-                setSubmitMessage('Thank you for your message. We\'ll be in touch soon!')
-                event.target.reset()
+            if (res.success) {
+                setSubmitMessage('Thank you! We will be in touch soon.');
+                event.target.reset(); // Reset the form
             } else {
-                setSubmitMessage('There was an error submitting the form. Please try again.')
+                setSubmitMessage('Error: Something went wrong. Please try again.');
             }
         } catch (error) {
-            console.error('Error:', error)
-            setSubmitMessage('There was an error submitting the form. Please try again.')
+            setSubmitMessage('Error: Could not send message. Please try again.');
+        } finally {
+            setIsSubmitting(false);
         }
-
-        setIsSubmitting(false)
-    }
+    };
 
     return (
 
@@ -57,7 +52,7 @@ export default function ContactForm() {
                     </div>
                 </div>
                 <div className="w-full mx-auto">
-                    <form className="space-y-6" onSubmit={handleSubmit}>
+                    <form className="space-y-6" onSubmit={onSubmit}>
                         <div className="space-y-2">
                             <label
                                 htmlFor="name"
