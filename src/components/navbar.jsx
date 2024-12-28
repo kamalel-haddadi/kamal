@@ -11,7 +11,7 @@ export default function Navbar() {
                 <div className="flex justify-between h-16">
                     {/* Logo and brand name */}
                     <div className="flex items-center">
-                        <a to="/" className="flex items-center">
+                        <a to="/NavbarLogo" className="flex items-center">
                             <span className="text-2xl font-bold text-green-600">Donate For Gaza</span>
                         </a>
                     </div>
@@ -46,7 +46,7 @@ export default function Navbar() {
                 {/* Mobile menu */}
                 {isMenuOpen && (
                     <div className="md:hidden pb-4">
-                        <a href="https://kparadise.org/malakfund/" className="block py-2  text-gray-700 hover:text-green-600 cursor-pointer">Join Malak's Lifeline for Gaza IDPs
+                        <a href="https://kparadise.org/malakfund/" to="/malak link" className="block py-2  text-gray-700 hover:text-green-600 cursor-pointer">Join Malak's Lifeline for Gaza IDPs
                         </a>
                         <a href="https://kparadise.org/malakfund/" className="block w-full mt-2 bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300 text-center">
                             Donate Now
